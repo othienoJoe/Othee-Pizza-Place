@@ -29,6 +29,9 @@ h5 {
 	border-radius: 70%;
 	padding-top: 10em;
 }
+.bounce {
+  animation: bounce 2s infinite;
+}
 #overlay{
   background-color: rgba(24, 11, 11, 0.1);
   height: 100%;
@@ -61,4 +64,23 @@ nav .navbar{
   padding-bottom: 20px;
   position: relative;
   overflow-x: hidden;
+}
+/* ================================== */
+#about_us h2 {
+  color: blue;
+	font-weight: 800;
+}
+.content {
+	margin-top: 4em;
+	padding: 65px 50px 85px;
+  width: 100%;
+	font: 1.5em sans-serif;
+  background-color: #ffa500;
+	border-radius: 30px;
+  float:right;
+  text-align: justify;
+  overflow-x: hidden;
+}
+.content h3 {
+	font-weight: 800;
 }
