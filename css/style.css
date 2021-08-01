@@ -9,6 +9,11 @@ html,body,header,
 body{
   margin: 0;
   padding: 0;
+  background-image: url("../Assets/othee.jpg");
+  background-position: center center;
+  background-size: 1000px;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
 }
 
 h1 {
@@ -56,11 +61,11 @@ nav .navbar{
   font-weight: 700;
 }
 .landing{
-  background-image: url("../Assets/othee.jpg");
+  /* background-image: url("../Assets/othee.jpg");
   background-position: center center;
   background-size: 1000px;
   background-repeat: no-repeat;
-  background-attachment:fixed;
+  background-attachment:fixed; */
   padding-bottom: 20px;
   position: relative;
   overflow-x: hidden;
@@ -93,7 +98,7 @@ nav .navbar{
 }
 /*======================================================*/
 #us {
-	color: blue;
+	color: rgb(198, 198, 226);
 	font-weight: 800;
 }
 .facebook {
@@ -119,4 +124,9 @@ nav .navbar{
 	color: red;
 	font-weight: 1000;
 	font-size: 20px;
+}
+
+#contact{
+  color: aliceblue;
+  background-color: rgba(18, 17, 114, 0.911);
 }
