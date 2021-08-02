@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="./Assets/othee logo.jpg" type="image/x-icon">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/order.css">
+	<title>Othee Pizza Place</title>
+</head>
+<body>
+	<!--The header -->
+	<header>
+    <div class="view landing">
+      <div class="d-flex justify-content-between">
+        <nav class="navbar navbar-expand-sm bg-warning navbar-dark fixed-top d-flex justify-content-between">
+          <a class="navbar-brand" id="logo" href="#"><img src="./Assets/othee logo.jpg" height="100px"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+					<a class="navbar-brand" id="order" href="#"><img src="./Assets/shopping-cart-icon-removebg-preview.png" height="150px"></a>
+        </nav>
+		  </div>
+		</div>
+	</header>
+
+	<hr>
+
+	<div class="container mb-5 texted" id="MENUS">
+    <div class="row row-cols-12 row-cols-md-12 row-cols-lg-12 ">
+      <div class="row">
+
+        <table class="table table-bordered  border-primary caption-top">
+          <caption class="text-area text-center" id="menu">THE MENU</caption>
+          <thead>
+            <tr class="table-dark">
+              <th scope="col">Pizza Size</th>
+              <th scope="col">Toppings</th>
+              <th scope="col">Crusts</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Large @Ksh.1200</th>
+              <td><mark>Pepperoni</mark> @Ksh.100</td>
+              <td><mark>Pizza Bagels</mark> @Ksh.250</td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td><mark>Mushrooms</mark> @Ksh.100</td>
+              <td><mark>Cheese-Stuffed</mark> @Ksh.300</td>
+            </tr>
+            <tr>
+							<th scope="row">Medium@Ksh.850</th>
+              <td><mark>Bacon</mark> @Ksh.100</td>
+              <td><mark>Sicilian</mark> @Ksh.230</td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td><mark>Green Peppers</mark> @Ksh.100</td>
+              <td><mark>Margherita</mark> @Ksh.300</td>
+            </tr>
+            <tr>
+							<th scope="row">Small@Ksh.650</th>
+              <td><mark>Sausage</mark> @Ksh.100</td>
+              <td><mark>Thick</mark> @Ksh.200</td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td><mark>Onions</mark> @Ksh.100</td>
+              <td><mark>Flatbread</mark> @Ksh.250</td>
+            </tr>
+            <tr>
+              <th scope="row"></th>     
+              <td><mark>Black Olives</mark> @Ksh.100</td>
+							<td><mark>Neapolitan</mark> @Ksh.350</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+	<hr>
+
+	<div class="container-fluid" id="make-order">
+    <div class="order-overlay">
+      <div class="controls-top text-center" id="Order-now"> 
+        <h2>Order Here!</h2>
+      </div>
+      <h2 class="text-center">Order your pizza here and it will be delivered at your door step!</h2>
+      <div class="row">
+        <div class="col-sm-5">
+          <form action="">
+            <div class="d-flex justify-content-evenly" id="pick">
+							<div>
+								<label for="select">Pick Your Flavor </label>
+							<select class="browser-default custom-select custom-select-md mb-3 name" id="flavor">
+								<option value="Raspberry Dessert Pizza">Raspberry Dessert Pizza</option>
+								<option value="Chicken & Beef Pepperoni">Chicken & Beef Pepperoni</option>
+								<option value="Chicken Macon BBQ">Chicken Macon BBQ</option>
+								<option value="Spicy Boerewors">Spicy Boerewors</option>
+								<option value="Cheese Burger">Cheese Burger</option>
+								<option value="Veggie Feast">Veggie Feast</option>
+								<option value="Meat Deluxe">Meat Deluxe</option>
+								<option value="Regina">Regina</option>
+							</select>
+							</div>
+							<div>
+								<label for="select">Select Size</label>
+							<select class="browser-default custom-select custom-select-md mb-3" id="size">
+								<option selected value="0">Select Size Here</option>
+								<option value="large">Large -- Ksh. 1200</option>
+								<option value="medium">Medium -- Ksh. 850</option>
+								<option value="small">Small -- Ksh. 650</option>
+								<option value="regular">Regular -- Ksh. 500</option>
+							</select>
+							</div>
+							<div>
+								<label for="select">Choose your favorite Crust!</label>
+							<select class="browser-default custom-select custom-select-md mb-3" id="crust">
+								<option selected value="0">Select Your Preferred Crust!</option>
+								<option value="Pizza Bagels">Pizza Bagels -- Ksh.250</option>
+								<option value="Cheese-Stuffed">Cheese-Stuffed -- sh. 300</option>
+								<option value="Sicilian">Sicilian -- sh. 230</option>
+								<option value="Margherita">Margherita -- Ksh. 300</option>
+								<option value="Neapolitan">Neapolitan -- Ksh. 350</option>
+								<option value="Thick">Thick -- Ksh. 200</option>
+								<option value="Flatbread">Flatbread -- Ksh. 250</option>
+							</select>
+							</div>
+						</div>
+            <label for="Toppings" id="check"><u>Check Your Toppings</u></label><br>
+            <div class="d-flex justify-content-evenly">
+							<div id="firstTopping">
+								<div class="custom-control custom-checkbox custom-control-inline">
+									<input type="checkbox" class="custom-control-input" id="onions" value="onions" name="toppings">
+									<label class="custom-control-label" for="onions">Onions</label>
+								</div>
+								<div class="custom-control custom-checkbox custom-control-inline">
+									<input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
+									<label class="custom-control-label" for="Bacon">Bacon</label>
+								</div>
+								<div class="custom-control custom-checkbox custom-control-inline">
+									<input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
+									<label class="custom-control-label" for="Mushrooms">Mushrooms</label>
+								</div>
+							</div>
+							<div id="secondTopping">
+								<div class="custom-control custom-checkbox custom-control-inline">
+									<input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
+									<label class="custom-control-label" for="Sausage">Sausage</label>
+								</div>
+								<div class="custom-control custom-checkbox custom-control-inline">
+									<input type="checkbox" class="custom-control-input" id="pepperoni" value="pepperoni" name="toppings">
+									<label class="custom-control-label" for="pepperoni">Pepperoni</label>
+								</div>
+								<div class="custom-control custom-checkbox custom-control-inline">
+									<input type="checkbox" class="custom-control-input" id="peppers" value="peppers" name="toppings">
+									<label class="custom-control-label" for="peppers">Green Peppers</label>
+								</div>
+								<br><br>
+                <button type="submit" class="btn btn-info" id="proceed">Proceed</button>
+							</div>
+						</div>
+            
+          </form>
+        </div>
+        <div class="col-sm-7">
+					<figure class="text-end" id="information">
+  					<blockquote class="blockquote">
+    					<p>Your order will be processed and delivered within one hour of placing.</p>
+            <p>Make sure you have the total amount for the order during order delivery delivery.</p>
+            <p>Incase of any comment of complaint, Please reach out to us as fast as possible.</p>
+ 					 </blockquote>
+  					<figcaption class="blockquote-footer">
+              Regards,<cite title="Source Title">Management</cite>
+  					</figcaption>
+					</figure>
+          <div class="text-end" id="choice">
+            <h2>This is Your Order :</h2>
+            <div id="orderMade">
+              <table class="table table-sm" id="pizzaTable">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Size</th>
+                    <th scope="col">Crust</th>
+                    <th scope="col">Topping</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody id="ordersMade">
+                  <tr>
+                    <td id="pizzaName"></td>
+                    <td id="pizzaSize"></td>
+                    <td id="pizzaCrust"></td>
+                    <td id="pizzaTopping"></td>
+                    <td id="total"></td>
+                  </tr>                  
+                </tbody>
+              </table>
+              <p id="pizzaTotal"></p>
+              <p id="totalBill"></p> 
+              <p id="addedPrice">Delivery will cost Ksh. 150 Only!</p>
+              <p id="finalMessage"></p>
+            </div>
+              <button class="btn btn-orange" id="addPizza">Add Pizza</button>
+              <button class="btn btn-orange" id="checkout">Checkout</button>
+              <button class="btn btn-orange" id="address">Home delivery?</button>
+            </div>
+            <div id="delivery">
+              <form action="">
+                <div class="form-group">
+                  <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                  <input type="number" id="phone" class="form-control mb-3" placeholder="Phone Number">
+                  <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+                  <button class="btn btn-orange" id="finalOrder">Place Order</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+	<hr>
+
+	<footer>
+		<div class="copyright text-center">
+			<h4 id="place">Othee Pizza Place</h4>
+     	<h4>Copyright: <span>&copy;</span> 2021 ; All Rights Reserved!</h4>
+    </div>
+	</footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="order.js"></script>
+</body>
+</html>
