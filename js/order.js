@@ -1,7 +1,7 @@
 // The Business logic
 var price , crust_price, topping_price ;
 let total = 0;
-function getPizza( name,size,crust,topping, total ){
+function getPizza(name,size,crust,topping, total){
   this.name = name;
   this.size = size;
   this.crust = crust;
@@ -15,7 +15,7 @@ $(document).ready(function(){
    let pizzaSize = $("#size option:selected").val();
    let pizzaCrust = $("#crust option:selected").val();
    let pizzaTopping = [];
-   $.each($("input[name='toppings']:checked"), function(){            
+   $.each($("input[name=toppings]:checked"), function(){            
        pizzaTopping.push($(this).val());
    });
    console.log(pizzaTopping.join(", "));
@@ -198,8 +198,8 @@ $(document).ready(function(){
       $("#pizzaTotal").hide();
       $("#delivery").hide();
       $("button#finalOrder").hide();
-      let deliVeryAmount= checkoutTotal+150;
-      console.log("Final Bill is: "+deliveryAmount);
+      let deliveryAmount= checkoutTotal+150;
+      console.log("Final Bill is: " + deliveryAmount);
       let person = $("input#name").val();
       let phone = $("input#phone").val();
       let location = $("input#location").val();
