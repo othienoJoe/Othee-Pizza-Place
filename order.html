@@ -15,7 +15,7 @@
     <div class="view landing">
       <div class="d-flex justify-content-between">
         <nav class="navbar navbar-expand-sm bg-warning navbar-dark fixed-top d-flex justify-content-between">
-          <a class="navbar-brand" id="logo" href="#"><img src="./Assets/othee logo.jpg" height="100px"></a>
+          <a class="navbar-brand" id="logo" href="index.html"><img src="./Assets/othee logo.jpg" height="100px"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -87,6 +87,7 @@
         <h2>Order Here!</h2>
       </div>
       <h2 class="text-center">Order your pizza here and it will be delivered at your door step!</h2>
+      <!-- input -->
       <div class="row">
         <div class="col-sm-5">
           <form action="">
@@ -128,6 +129,7 @@
 							</select>
 							</div>
 						</div>
+            
             <label for="Toppings" id="check"><u>Check Your Toppings</u></label><br>
             <div class="d-flex justify-content-evenly">
 							<div id="firstTopping">
@@ -164,6 +166,9 @@
             
           </form>
         </div>
+
+        <!-- end of input -->
+        <!-- start of output -->
         <div class="col-sm-7">
 					<figure class="text-end" id="information">
   					<blockquote class="blockquote">
@@ -207,6 +212,7 @@
               <button class="btn btn-orange" id="checkout">Checkout</button>
               <button class="btn btn-orange" id="address">Home delivery?</button>
             </div>
+
             <div id="delivery">
               <form action="">
                 <div class="form-group">
@@ -217,7 +223,8 @@
                 </div>
               </form>
             </div>
-          </div>
+          </div>  
+          <!-- end -->
       </div>
     </div>
   </div>
@@ -230,9 +237,10 @@
      	<h4>Copyright: <span>&copy;</span> 2021 ; All Rights Reserved!</h4>
     </div>
 	</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-	<script src="order.js"></script>
+
+	<script src="./js/order.js"></script>
 </body>
 </html>
